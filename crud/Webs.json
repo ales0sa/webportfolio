@@ -1,0 +1,22 @@
+{
+    "type": "api",
+    "fields": [{
+            "name": "title",
+            "length": 200,
+            "type": "string",
+            "index": true
+        },
+        {
+            "name": "body",
+            "type": "text",
+            "def": "abc",
+            "nullable": true
+        }
+    ],
+    "relationships": [{
+            "name": "user",
+            "type": "belongsTo",
+            "model": "User"
+        }
+    ]
+}
